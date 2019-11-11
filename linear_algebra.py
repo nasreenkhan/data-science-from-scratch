@@ -12,12 +12,12 @@ def add(v: Vector, w: Vector) -> Vector:
 assert add([1, 2, 3], [4, 5, 6]) == [5, 7, 9]
 
 
-def subtract(v, wv: Vector, w: Vector) -> Vector:
+def subtract(v: Vector, w: Vector) -> Vector:
     """ Subtractsubtractsv, w corresponding elements """
     assert len(v) == len(w)
     return [v_i - w_i for v_i, w_i in zip(v, w)]
 
-assert subtract(v, w[5, 7, 9], [4, 5, 6]) == [1, 2, 3]
+assert subtract([5, 7, 9], [4, 5, 6]) == [1, 2, 3]
 
 
 def vector_sum(vectors: List[Vector]) -> Vector:
